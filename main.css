@@ -78,11 +78,11 @@ body{
   }
 
   .grid-container {
-    grid-template-columns: 1fr; /* Stack grid items vertically */
+    grid-template-columns: 1fr;
   }
 
   .offer-card {
-    width: 90%; /* Adjust card width for small screens */
+    width: 90%; 
   }
 }
 
