@@ -2,7 +2,7 @@ body{
     padding: 0;
     margin: 0;
     font-family: arial;
-    border: border-box;
+    box-sizing: border-box;
     /* color: white; */
 }
 .navbar{
@@ -12,7 +12,9 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-evenly ;
+    
 }
+
 .nav-logo{
     height: 50px;
     width: 100px;
@@ -20,6 +22,7 @@ body{
 .logo{
     background-image: url(amazon-uk-logo.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
     height: 50px;
     width: 100%;
 }
@@ -57,7 +60,7 @@ body{
     height: 40px;
     border-radius: 4px;
 }
-.nav-search :hover{
+.nav-search:hover{
     border: 2px solid orange;
 }
 .select{
@@ -99,7 +102,204 @@ body{
 .cart i{
     font-size: 28px;
 }
-cart{
-    font-size: 5px;
+.cart{
+    font-size: 15px;
     font-weight: 700;
+}
+@media (max-width: 768px) {
+    .navbar {
+        /* flex-wrap: wrap; */
+
+        justify-content: center;
+        height: auto;
+        gap: 10px;
+        
+         
+    }
+
+    .nav-logo {
+        width: 100px;
+        height: 50px;
+    }
+
+    .logo {
+        height: 70px;
+        background-size: contain;
+        background-position: center;
+    }
+
+    .nav-search {
+        width: 100%;
+        max-width: 500px;
+       
+    }
+
+    .add-icon {
+        font-size: 12px;
+    }
+
+    .cart {
+        font-size: 10px;
+    }
+
+    .cart i {
+        font-size: 20px;
+    }
+    .hello{
+        font-size: 13px;
+    }
+    .account{
+        font-size: 13px;
+    }
+    .panel{
+        font-size: 10px;
+    }
+    .panel-seller{
+        font-size: 10px;
+    }
+    .panal-all{
+        font-size: 10px;
+    }
+
+}
+
+.panel{
+    height: 40px;
+    background-color: #222f3d;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+}
+.panel-seller p{
+    display: inline;
+    margin-left: 10px;
+    
+}
+.panel-seller{
+    font-size: 14px;
+   
+}
+
+@media (max-width:480px){
+    .navbar,.nav-search{
+        justify-content: center;
+        height: auto;
+        font-size: 12px;
+    }
+    .select,
+    .input,
+    .search-icon{
+        font-size: 12px;
+    }
+    .cart{
+        font-size: 8px;
+
+    }
+    .cart i{
+        font-size: 18px;
+    }
+    .add-icon{
+        font-size: 10px;
+    }
+    .add-first{
+        font-size: 8px;
+    }
+    .add-second{
+        font-size: 8px;
+    }
+    .input{
+        font-size: 8px;
+
+    }
+    .return{
+        font-size: 8px;
+    }
+    .hello{
+       
+        font-size: 8px;
+    }
+    .account{
+        font-size: 8px;
+    }
+    .panel{
+        height: auto;
+        font-size: 8px;
+        
+    }
+    .panel-seller{
+        font-size: 6px;
+    }
+    .panal-all{
+        font-size: 6px;
+    }
+    .logo{
+        height: 50px;
+        width: 50px;
+    }
+    .nav-logo{
+        width: 60px;
+    }
+
+}
+@media (max-width:320){
+    .navbar,.nav-search{
+        justify-content: center;
+        height: auto;
+        font-size: 10px;
+    }
+    .select,
+    .input,
+    .search-icon{
+        font-size: 10px;
+    }
+    .cart{
+        font-size: 6px;
+
+    }
+    .cart i{
+        font-size: 6px;
+    }
+    .add-icon{
+        font-size: 6px;
+    }
+    .add-first{
+        font-size: 6px;
+    }
+    .add-second{
+        font-size: 6px;
+    }
+    .input{
+        font-size: 6px;
+
+    }
+    .return{
+        font-size: 6px;
+    }
+    .hello{
+       
+        font-size: 6px;
+    }
+    .account{
+        font-size: 6px;
+    }
+    .panel{
+        height: auto;
+        font-size: 6px;
+        
+    }
+    .panel-seller{
+        font-size: 5px;
+    }
+    .panal-all{
+        font-size: 5px;
+    }
+    .logo{
+        height: 30px;
+        width: 30px;
+    }
+    .nav-logo{
+        width: 40px;
+    }
+
 }
