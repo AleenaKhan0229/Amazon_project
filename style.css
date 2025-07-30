@@ -242,7 +242,7 @@ body{
     }
 
 }
-@media (max-width:320){
+@media (max-width:350){
     .navbar,.nav-search{
         justify-content: center;
         height: auto;
