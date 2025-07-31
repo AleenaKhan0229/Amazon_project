@@ -111,6 +111,7 @@ body{
         /* flex-wrap: wrap; */
 
         justify-content: center;
+        max-width: 100%;
         height: auto;
         gap: 10px;
         
@@ -118,47 +119,58 @@ body{
     }
 
     .nav-logo {
-        width: 100px;
-        height: 50px;
+        max-width: 100%;
+        height: auto;
     }
 
     .logo {
-        height: 70px;
+        height: 90px;
         background-size: contain;
         background-position: center;
     }
 
     .nav-search {
-        width: 100%;
-        max-width: 500px;
+    
+        max-width: 100%;
+        height: auto;
+        font-size: 1em;
        
+    }
+    .return{
+        font-size: 0.8rem;
+    }
+    .signin{
+        font-size: 0.8rem;
     }
 
     .add-icon {
-        font-size: 12px;
+        font-size: 1em;
     }
 
     .cart {
-        font-size: 10px;
+        font-size: 0.9rem;
     }
 
     .cart i {
-        font-size: 20px;
+        font-size: 1em;
     }
     .hello{
-        font-size: 13px;
+        font-size: 1em;
     }
     .account{
-        font-size: 13px;
+        font-size: 1em;
     }
     .panel{
-        font-size: 10px;
+        font-size: 0.5rem;
+    }
+    .panel-text{
+        font-size: 0.7rem;
     }
     .panel-seller{
-        font-size: 10px;
+        font-size: 0.5rem;
     }
     .panal-all{
-        font-size: 10px;
+        font-size: 0.5rem;
     }
 
 }

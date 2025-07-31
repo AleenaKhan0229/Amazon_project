@@ -1,61 +1,89 @@
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
-.university-shop {
-  width: 100%;
-  background-color: white;
-  padding: 20px;
-  overflow-x: auto;
-  
+.shop-container {
+  background-color: #f0f2f2;
+  padding: 40px 15px;
 }
 
+
+.university-shop {
+  max-width: 1200px;
+  margin: auto;
+  background-color: white;
+  padding: 25px 30px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.shop-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.shop-header h2 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.shop-header h5{
+  font-size: 14px;
+  color: #0073e6;
+  text-decoration: none;
+}
 .scroll-shop {
   display: flex;
-  gap: 15px;
+  overflow-x: auto;
+  gap: 20px;
+  padding-bottom: 10px;
 }
 
 .shop {
   background-color: white;
-  border: 1px solid transparent;
   border-radius: 4px;
-  padding: 10px;
-  width: 160px;
+  padding: 5px;
+  width: 140px;
   flex: 0 0 auto;
+  text-align: center;
 }
 
 .shop img {
   width: 100%;
-  height: 200px;
-  border: 1px solid transparent;
+  height: 140px;
   border-radius: 4px;
   object-fit: cover;
+  border: none;
 }
+
+
+
 
 @media (min-width: 768px) {
   .shop:hover {
     transform: scale(1.05);
+    transition: transform 0.3s ease;
   }
 }
 
 
 @media (max-width: 768px) {
   .shop {
-    width: 140px;
+    width: 120px;
   }
-
   .shop img {
-    height: 180px;
+    height: 120px;
   }
 }
+
 @media (max-width: 480px) {
   .shop {
-    width: 120px;
-    padding: 8px;
+    width: 100px;
   }
-
   .shop img {
-    height: 160px;
+    height: 100px;
   }
 }

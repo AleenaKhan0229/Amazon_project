@@ -2,14 +2,15 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
-
-.dvd-container {
+.summer-container {
   background-color: #f0f2f2;
   padding: 40px 15px;
 }
 
-.dvd {
+
+.summer-shop {
   max-width: 1200px;
   margin: auto;
   background-color: white;
@@ -17,27 +18,31 @@ body {
   border-radius: 8px;
   overflow: hidden;
 }
-
-.dvd-header {
+.summer-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 15px;
 }
 
-.dvd-header h2 {
+.summer-header h2 {
   margin: 0;
   font-size: 22px;
 }
 
-.scroll-boxes {
+.summer-header h5{
+  font-size: 14px;
+  color: #0073e6;
+  text-decoration: none;
+}
+.scroll-summer{
   display: flex;
   overflow-x: auto;
   gap: 20px;
   padding-bottom: 10px;
 }
 
-.box {
+.summer {
   background-color: white;
   border-radius: 4px;
   padding: 5px;
@@ -46,35 +51,39 @@ body {
   text-align: center;
 }
 
-.box img {
+.summer img {
   width: 100%;
   height: 140px;
   border-radius: 4px;
-  object-fit: cover; 
+  object-fit: cover;
   border: none;
 }
 
+
+
+
 @media (min-width: 768px) {
-  .box:hover {
+  .summer:hover {
     transform: scale(1.05);
     transition: transform 0.3s ease;
   }
 }
 
+
 @media (max-width: 768px) {
-  .box {
+  .summer {
     width: 120px;
   }
-  .box img {
+  .summer img {
     height: 120px;
   }
 }
 
 @media (max-width: 480px) {
-  .box {
+  .summer{
     width: 100px;
   }
-  .box img {
+  .summer img {
     height: 100px;
   }
 }
