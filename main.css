@@ -79,7 +79,8 @@ body{
 }
 @media(max-width:480px){
   .offers-section {
-  
+  max-width: 100%;
+  height: auto;
     align-items: center;
   }
 
@@ -124,7 +125,7 @@ body{
 
 .container {
   display: grid;
-  grid-template-columns: repeat(  2, 1fr);
+   grid-template-columns: repeat(  2, 1fr); 
   gap: 15px;
   
 }
@@ -140,29 +141,23 @@ body{
   color: blue;
 }
 @media(max-width:480px){
-  .offers-section {
-    flex-direction: column;
+  .shopping {
+  max-width: 100%;
+  height: auto;
     align-items: center;
   }
 
-  .grid-container {
-    grid-template-columns: 1fr;
-  }
-  .card{
-   max-width: 100%;
+  .card {
+    max-width: 100%; 
     height: auto;
-  }
-  .img{
-    max-width: 100%;
-    height: auto;
-  }
-
-  .offer-card {
-    width: 90%; 
   }
   .item img{
     max-width: 100%;
     height: auto;
+    font-size: 0.8rem;
+  }
+  .item{
+    padding: 1.5rem;
   }
 }
 .image {
