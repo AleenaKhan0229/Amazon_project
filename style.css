@@ -11,19 +11,20 @@ body{
     color: white;
     display: flex;
     align-items: center;
-    justify-content: space-evenly ;
+    justify-content: space-between ;
     
 }
 
 .nav-logo{
-    height: 50px;
+    height: 60px;
     width: 100px;
 }
 .logo{
     background-image: url(amazon-uk-logo.jpg);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-    height: 50px;
+    background-position: center;
+    height: 100%;
     width: 100%;
 }
 .border{
@@ -192,6 +193,7 @@ body{
     font-size: 14px;
    
 }
+
 
 @media (max-width:480px){
     .navbar,.nav-search{
